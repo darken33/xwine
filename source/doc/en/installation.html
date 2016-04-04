@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>XWine - Installation</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - Manuel Utilisateur" name="description"
+ lang="fr">
+  <meta
+ content="xwine, manuel, wine, aide, linux, libre, free, software, logiciel"
+ name="keywords" lang="fr">
+</head>
+<body alink="#6666bb" bgcolor="#ffffff" link="#6666bb" text="#000000"
+ vlink="#6666bb">
+<div class="NAVFOOTER">
+<center><b>XWine v1.0 - User's Manual<br>
+</b></center>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a
+ href="introduction.html">&lt;&lt;</a><a href="introduction.html">Previous</a></td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%"><a
+ href="firststeps.html">Next&gt;&gt;</a></td>
+    </tr>
+  </tbody>
+</table>
+<hr> </div>
+<div class="SOMMAIRE">
+<h1>Chapter 2. Installation</h1>
+<ul>
+  <li><a href="#2.1.">2.1. Required Configuration</a></li>
+  <li><a href="#2.2.">2.2. Installation
+from sources</a></li>
+  <li><a href="#2.3.">2.3. Installation
+from RPM file<br>
+    </a></li>
+</ul>
+</div>
+<div class="normal">
+<h2><a name="2.1."></a>2.1. Required Configuration</h2>
+<p> <u>Required libraries :</u> </p>
+<ul>
+  <li>GTK : <a href="http://www.gtk.org">http://www.gtk.org</a></li>
+  <li>Gnome &amp; Gnome-libs : <a href="http://developper.gnome.org">http://developper.gnome.org</a></li>
+  <li>&nbsp;libxml2 library : <a href="http://rpmfind.net/linux/RPM">http://rpmfind.net/linux/RPM</a></li>
+  <li>db1 : <a href="http://rpmfind.net/linux/RPM">http://rpmfind.net/linux/RPM</a></li>
+</ul>
+Note : <br>
+If you install XWine from sources, you will need also the header files
+(includes) of the libraries, especially the gnome-libs-devel package.
+<p> <u>Required</u><u> applications :</u><br>
+You will need also several applications to run Xwine : </p>
+<ul>
+  <li>Wine : XWine is a configuration graphical interface for Wine (it
+is not the emulator) <a href="http://www.winehq.org">http://www.winehq.org</a></li>
+  <li>A web browser : to read the documentation (Konqueror,
+Netscape, Mozilla, Opera)</li>
+  <li>Wine Utils : utilities for Wine, as
+notepad, mine, ...(it is not mandatory) <a
+ href="http://www.winehq.org">http://www.winehq.org</a></li>
+  <li>WinesetupTk : another configuration graphical interface for Wine
+(it is not mandatory)</li>
+</ul>
+</div>
+<div class="normal">
+<h2><a name="2.2."></a>2.2. Installation
+from sources</h2>
+<p>The source files are in the&nbsp; xwine-1.0.tar.gz file , you should
+first decompress it :<br>
+<code>$ tar -xzf xwine-1.0.tar.gz</code><br>
+</p>
+<p>A xwine-1.0 directory is created, enter in it :<br>
+<code>$ cd xwine-1.0_fr</code> </p>
+<p>Configure the&nbsp; XWine installation :<br>
+<code>$ ./configure</code><br>
+<code></code></p>
+<p>Compile XWine : <br>
+<code>$ make</code> </p>
+<p>When the compilation is done, install XWine in the right directory ;
+you should be root to do it : <br>
+<code> $ su<br>
+password:<br>
+# </code><br>
+</p>
+<p>Install Xwine using the make install command :<br>
+<code># make install</code><br>
+</p>
+<p>Then quit the root session :<br>
+<code># exit<br>
+$</code> </p>
+<p>Now you can run XWine, using the xwine command :<br>
+<code>$ xwine</code> </p>
+</div>
+<div class="normal">
+<h2><a name="2.3."></a>2.3. Installation
+from RPM file<br>
+</h2>
+<p>When you install XWine from RPM file, the whole installation is
+managed
+with rpm
+(dependancies, files, uninstallation). You have not to compile it, so
+you
+do not need the header files of the libraries (.h files). </p>
+<p>For example, to install XWine from rpm file
+xwine-1.0-1.i586.rpm, you&nbsp; have only to type the command (you
+should be root) :<br>
+<code># rpm -i xwine-1.0.-1.i586.rpm</code> </p>
+<p>For the uninstallation, you only type :<br>
+<code># rpm -e xwine</code> </p>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a
+ href="introduction.html">&lt;&lt;</a><a href="introduction.html">Previous</a></td>
+      <td align="center" valign="top" width="34%"><a href="index.html">Table
+of Contents</a></td>
+      <td align="right" valign="top" width="33%"><a
+ href="firststeps.html">Next&gt;&gt;</a></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="33%">Introduction</td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%">First Steps</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

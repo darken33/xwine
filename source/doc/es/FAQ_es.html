@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>XWine - FAQ</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - FAQ" name="description" lang="en">
+  <meta
+ content="xwine, faq, wine, help, linux, libre, free, software, logiciel"
+ name="keywords" lang="en">
+</head>
+<body link="#6666bb" alink="#6666bb" bgcolor="#ffffff" text="#000000"
+ vlink="#6666bb">
+<h1>XWine - Preguntas de Uso Frecuente<br>
+</h1>
+<address>Versi&oacute;n actualizada disponible en <a
+ href="http://darken33.free.fr/"><span
+ style="text-decoration: underline;">http://darken33.free.fr</span></a></address>
+<p> </p>
+<p></p>
+<hr>
+<p> </p>
+<h2><u><a name="SOMMAIRE">Sumario</a></u></h2>
+<ul>
+  <li><a name="TOC1" href="#INSTALLATION">Problemas de
+instalaci&oacute;n</a> </li>
+  <li><a name="TOC2" href="#UTILISATION">Problemas de ejecuci&oacute;n</a>
+  </li>
+  <li><a name="TOC3" href="#NOUVEAU">&iquest;Alg&uacute;n problema
+nuevo?</a> </li>
+</ul>
+<p></p>
+<hr>
+<p> </p>
+<h2><u><a name="INSTALLATION">Problemas de instalaci&oacute;n</a></u></h2>
+<i><b>P1)</b> &iquest;El siguiente mensaje se muestra durante el paso
+Make?</i><br>
+<code>ld: -ldb1 : file not found</code><br>
+<br>
+<b>R1)</b> La librer&iacute;a db1 no se encontr&oacute;, por favor
+instalala.<br>
+<br>
+<center>
+<hr width="25%"></center>
+<i><b>P2)</b> &iquest;El siguiente mensaje se muestra durante el paso
+Configure?</i><br>
+<code>gnomeConf.sh : file not found</code><br>
+<br>
+<b>R2)</b> El paquete gnome-libs-devel no est&aacute; instalado, debes
+instalarlo.<br>
+<br>
+<p></p>
+<hr>
+<p> </p>
+<h2><u><a name="UTILISATION">Problemas de ejecuci&oacute;n</a></u></h2>
+<i><b>P1)</b> &iquest;El siguiente mensaje se muestra cuando ejecutas
+XWine?</i><br>
+<code>** WARNING ** : Couldn't find pixmap file: xwine/winfd.xpm</code><br>
+<br>
+<b>R1)</b> El directorio de instalaci&oacute;n por defecto de XWine es
+/usr/local . Dos soluciones:
+<ul>
+  <li>Reinicia la instalaci&oacute;n con <code>./configure
+--prefix=/usr</code> </li>
+  <li>Haz el siguiente enlace: <code>ln -s
+/usr/local/share/pixmaps/xwine /usr/share/pixmaps/xwine</code> </li>
+</ul>
+<center>
+<hr width="25%"></center>
+<i><b>P2)</b> &iquest;El siguiente mensaje se muestra en el fichero log?</i><br>
+<code>wine: file
+'/home/philippe/.wine/wineserver-localhost.localdomain/socket' exists,<br>
+but I cannot connect to it; maybe the wineserver has crashed?<br>
+If this is the case, you should remove this socket file and try again.</code><br>
+<br>
+<b>R2)</b> Una aplicaci&oacute;n ha fallado, tienes que matar el socket
+del servidor Wine: haz click en <b>Programas&gt;Reiniciar</b><br>
+<br>
+<p></p>
+<hr>
+<p> </p>
+<h2><u><a name="NOUVEAU">&iquest;Alg&uacute;n problema nuevo?<br>
+</a></u></h2>
+Si tienes alg&uacute;n problema o si quieres preguntarme algo me puedes
+mandar un correo electr&oacute;nico a <a
+ href="mailto:ph.bousquet@abul.org">ph.bousquet@abul.org</a>.<br>
+<p> </p>
+<hr>
+<table>
+  <tbody>
+    <tr>
+      <td align="left"> <a href="http://validator.w3.org/check/referer">[Valid
+HTML 4.01!]</a> </td>
+      <td align="left"> <small>Copyright &copy; 2002 - Philippe
+BOUSQUET</small> </td>
+      <td> <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

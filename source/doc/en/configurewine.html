@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>XWine - Configurer Wine</title>
+</head>
+<body>
+<div class="NAVFOOTER">
+<center><b>XWine v1.0 - User' Manual</b></center>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a
+ href="firststeps.html"> &lt;&lt;Previous</a></td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%"><a
+ href="configureapp.html">Next&gt;&gt;</a></td>
+    </tr>
+  </tbody>
+</table>
+<hr></div>
+<h1>Chapter 4. Configure Wine</h1>
+<ul>
+  <li><a href="#4.1.">4.1. Configuration Panel<br>
+    </a></li>
+  <li><a href="#4.2.">4.2. Disk Drives Configuration</a></li>
+  <li><a href="#4.3.">4.3. System Directories Configuration</a></li>
+  <li><a href="#4.4.">4.4. Windows Version Configuration</a></li>
+  <li><a href="#4.5.">4.5. DLLs Configuration<br>
+    </a></li>
+  <li><a href="#4.6.">4.6. Look and Feel Configuration<br>
+    </a></li>
+  <li><a href="#4.7.">4.7. Video Configuration</a></li>
+  <li><a href="#4.8.">4.8. Ports Configuration</a></li>
+  <li><a href="#4.9.">4.9. Registry Configuration</a></li>
+  <li><a href="#4.10.">4.10. Console Configuration</a></li>
+  <li><a href="#4.11.">4.11. </a><a href="configurewine.html#4.11.">Multimedia
+C</a><a href="#4.11.">onfiguration<br>
+    </a></li>
+  <li><a href="#4.12.">4.12. Configure with WineSetupTk</a></li>
+  <li><a href="#4.13.">4.13. Edit the </a><a
+ href="configurewine.html#4.13.">Wine </a><a href="#4.13.">configuration
+file <br>
+    </a></li>
+  <li><a href="#4.14.">4.14. Restore the Wine default configuration file</a></li>
+  <li><a href="#4.15.">4.15. Export the Wine configuration / </a><a
+ href="configurewine.html#4.15.">applications </a><a href="#4.15.">configurations&nbsp;
+(root only)</a></li>
+</ul>
+<h2><a name="4.1."></a>4.1. Configuration Panel</h2>
+In order to help to configure Wine, Xwine offers a graphical
+configuration panel. Click on the menu
+Start-&gt;Parameters-&gt;Wine Configuration&nbsp; :<br>
+<br>
+<div style="text-align: left;"><img alt="" src="imgs/cfg_wine.png"
+ style="width: 470px; height: 363px;"> </div>
+<br>
+You may execute the following actions :<br>
+<ul>
+  <li>Configure the disk drives<br>
+  </li>
+  <li>Configure the system directories</li>
+  <li>Configure the Windows version to emulate</li>
+  <li>Configure the DLLs</li>
+  <li>Configure the look and feel of the windows</li>
+  <li>Configure the graphical management</li>
+  <li>Configure the ports</li>
+  <li>Configure the registry<br>
+  </li>
+  <li>Configure the terminal<br>
+  </li>
+  <li>Configurer the multimedia drivers <br>
+  </li>
+  <li>Run the WineSetuptk tool (if installed)</li>
+  <li>Edit the Wine config file (for experts only)</li>
+  <li>Configure the applications under Wine</li>
+  <li>Start/Stop the Debug mode <br>
+  </li>
+  <li>Display the Wine log file<br>
+  </li>
+  <li>Restore the default Wine config file</li>
+  <li>Export the Wine configuration / the applications configurations
+(root only)<br>
+  </li>
+</ul>
+<h2><a name="4.2."></a>4.2. Disk Drives Configuration</h2>
+This section allows to configure the access to the disk drives under
+Wine. <br>
+From the Configuration Panel, click on the "Drives" button to access
+the
+list of drives identified by Wine.<br>
+<h3>4.2.1. Disk Drives current list<br>
+</h3>
+<div style="text-align: left;"><img alt="" src="imgs/mngt_drv.png"
+ style="width: 338px; height: 310px;"> <br>
+<br>
+This list displays all disk drives which are identified by Wine. <br>
+You may here add, modify or remove a disk drive.<br>
+</div>
+<h3>4.2.2. Disk Drives Properties</h3>
+<div style="text-align: center;">
+<div style="text-align: left;"><img alt="" src="imgs/cfg_drv.png"
+ style="width: 338px; height: 310px;"> <br>
+</div>
+<br>
+<div style="text-align: left;">On that window you may specify the
+following parameters :<br>
+<ul>
+  <li>the&nbsp; drive name under Wine (i.e. : [Drive C] for C:)</li>
+  <li>the path that Wine uses to find the drive (i.e. : /mnt/windows) ;
+you can browse it by clicking on the [...] button</li>
+  <li>the drive type (floppy : floppy disk,&nbsp; hd :
+hard disk, cdrom : CDrom drive, network : network drive)</li>
+  <li>the name you give to the drive (i.e. : Windows)</li>
+  <li>the file system type, which describes how are the files managed
+(win95, msdos, unix)</li>
+  <li>the serial number (optional)</li>
+  <li>the corresponding Linux device (optional), i.e. : /dev/fd0 for
+the&nbsp; floppy disk</li>
+</ul>
+</div>
+<div style="text-align: left;">
+<h2><a name="4.3."></a>4.3. System Directories Configuration</h2>
+<div style="text-align: left;"><img alt="" src="imgs/cfg_dir.png"
+ style="width: 250px; height: 233px;"> <br>
+</div>
+<br>
+You can set here the various environment variables for Wine :<br>
+<ul>
+  <li>Windows : the directory where Windows is installed (the most
+often c:\\windows)</li>
+  <li>System : the Windows system directory (the most often
+c:\\windows\\system)</li>
+  <li>Temp : the temporary directory used by Wine</li>
+  <li>Profile : the user profile directory (the most often
+c:\\windows\\Profiles\\Administrator)</li>
+  <li>Path : the PATH environment variable for Wine
+(i.e. : c:\\windows;c:\\windows\\system)</li>
+</ul>
+</div>
+</div>
+<h2><a name="4.4."></a>4.4. Windows Version Configuration</h2>
+<img alt="" src="imgs/cfg_ver.png" style="width: 348px; height: 177px;">
+<br>
+<br>
+You may specify the Ms-Windows version to emulate (useful if Windows is
+installed).<br>
+<ul>
+  <li>Windows version : win95, win98, winxp, winme, win2k (Win
+2000), nt40 (NT 4.0), nt351 (NT&nbsp; 3.51) , win20 (Win 2.0), win30
+(Win 3.0), win31</li>
+  <li>Ms-Dos 6.22 Emulation : check it if you want to emulate msdos
+(works only with win31 mode)</li>
+</ul>
+<h2><a name="4.5."></a>4.5. DLLs Configuration</h2>
+This section allows to parameter the DLL management under
+Wine. <br>
+There are 3 choices for each DLL :<br>
+<ul>
+  <li>native : for use of Ms-Windows DLLs</li>
+  <li>builtin : for use of Wine DLLs<br>
+  </li>
+  <li>so : for use of the Linux system libraries (for the libraries
+which are identical for Windows and
+Linux)</li>
+</ul>
+<h3>4.5.1. DLLs list</h3>
+<img alt="" src="imgs/mngt_dll.png" style="width: 368px; height: 330px;">
+<br>
+<br>
+This list defines the default order to look for&nbsp; the&nbsp; DLLs
+(native,
+builtin ou so), and displays the DLLs which have specific loading
+parameters.<br>
+You may also add, modify or remove a DLL.<br>
+<br>
+Below is a configuration which should works for most of the cases (if
+you have Ms-Windows) :<br>
+<ul>
+  <li>Default : builtin, native, so</li>
+  <li>krnl386, kernel32 : builtin</li>
+  <li>gdi, gdi32 : builtin</li>
+  <li>user, user32 : builtin</li>
+  <li>ntdll : builtin</li>
+  <li>w32skrnl : builtin</li>
+  <li>Win32s (for Win3.x) : builtin. </li>
+  <li>wow32 : builtin</li>
+  <li>system : builtin</li>
+  <li>display : builtin</li>
+  <li>toolhelp : builtin</li>
+  <li>ver, version : native, builtin</li>
+  <li>advapi32 : native, builtin</li>
+  <li>commdlg, comdlg32 : native, builtin</li>
+  <li>commctrl, comctl32 : native, builtin</li>
+  <li>shell, shell32 : native, builtin</li>
+  <li>winsock, wsock32 : builtin</li>
+  <li>icmp : builtin</li>
+  <li>mpr : builtin</li>
+  <li>lzexpand, lz32 : builtin</li>
+  <li>winaspi, wnaspi32 : builtin</li>
+  <li>crtdll : native, builtin</li>
+  <li>winspool.drv : native, builtin</li>
+  <li>mmsystem, winmm : builtin</li>
+  <li>msacm, msacm32 : builtin</li>
+  <li>msvideo, msvfw32 : native</li>
+  <li>mcicda.drv :&nbsp;native, builtin</li>
+  <li>mciseq.drv : native, builtin</li>
+  <li>mciwave.drv : native, builtin</li>
+  <li>mciavi.drv : native, builtin</li>
+  <li>mcianim.drv : native, builtin</li>
+  <li>msacm.drv : builtin</li>
+  <li>midimap.drv : native, builtin</li>
+  <li>wprocs : builtin</li>
+</ul>
+<h3>4.5.2. Configure a DLL</h3>
+<img alt="" src="imgs/cfg_dll.png" style="width: 317px; height: 174px;">
+<br>
+<br>
+When you click on New or Modify in the previous list, you get this
+dialog box , which allows to specify the order to look
+for a given DLL.<br>
+<h2><a name="4.6."></a>4.6. Look and Feel Configuration</h2>
+<img alt="" src="imgs/cfg_look.png" style="width: 327px; height: 292px;">
+<br>
+<br>
+You may choose the look of the windows :<br>
+<ul>
+  <li>Look : choose Win31, Win95 or Win98</li>
+  <li>Fonts : you may choose the size and the type style (Standard,
+Bold,
+Italic, Underlined, Strikeout) <br>
+  </li>
+</ul>
+<h2><a name="4.7."></a>4.7. Video Configuration</h2>
+<img alt="" src="imgs/cfg_gfx.png" style="width: 328px; height: 344px;">
+<br>
+<br>
+You will specify here the behavior of the applications windows under
+Wine :<br>
+<ul>
+  <li>Video Mode : XWindow (managed by the Linux window manager ),
+.... , Desktop</li>
+  <li>Double Buffer : activates the double buffering, it may be very
+useful with OpenGL<br>
+  </li>
+  <li>System Colors&nbsp; : specifies the
+maximum number of shared colors that&nbsp; Wine will be able to use.
+The higher this value is, the lesser the colors will be available for
+other applications <br>
+  </li>
+  <li>Use DGA :&nbsp; specifies that you want that DirectDraw use
+the Direct Graphical&nbsp; Architecture (DGA) of XFree86,
+which will manage the display and allow the execution of a game in full
+screen and at the maximum speed<br>
+  </li>
+  <li>Use XShm : If you do not want that DirectX uses
+DGA, you may use the Shared Memory Extensions of X (XShm). It is slower
+than DGA, but faster than the standard display with X11.<br>
+  </li>
+  <li>Use DXGrab : If you do not use DGA, it allows to force the mouse
+to stay in the game window<br>
+  </li>
+</ul>
+<h2><a name="4.8."></a>4.8. Ports Configuration</h2>
+<img alt="" src="imgs/cfg_ports.png"
+ style="width: 261px; height: 233px;"> <br>
+<br>
+You may configure the serial and parallel ports : you may define the
+corresponding names of a Windows port and a Linux device. <br>
+For example : the most often the serial port is named Com1 under
+Windows and /dev/ttyS0 under Linux.<br>
+<br>
+<h2><a name="4.9."></a>4.9. Registry Configuration</h2>
+<img alt="" src="imgs/cfg_reg.png" style="width: 297px; height: 235px;">
+<br>
+<br>
+Allows to specify how Wine manages the Registry :<br>
+<ul>
+  <li>Load the general database from /etc :&nbsp; implies most often
+that you have no Ms-Windows<br>
+  </li>
+  <li>Load/Record in home registry : implies that you want to
+allow
+the user to modify the Registry (the changes will be
+stored in his .wine directory&nbsp; and do not change neither the
+Windows registry, neither the Wine base)</li>
+  <li>Load Ms-Windows Registry implies that you have Ms-Windows and you
+want Wine uses its Registry<br>
+  </li>
+</ul>
+<h2><a name="4.10."></a>4.10. Console Configuration</h2>
+<img alt="" src="imgs/cfg_term.png" style="width: 313px; height: 187px;">
+<br>
+<br>
+This box allows to define the default Wine terminal.
+This one is especially started when the debugger is executed.<br>
+<h2><a name="4.11."></a>4.11. Multimedia Configuration</h2>
+<img alt="" src="imgs/cfg_mmedia.png"
+ style="width: 270px; height: 219px;"> <br>
+<br>
+It allows to specify the drivers to use for the sound under Wine :<br>
+<br>
+Drivers : indicates the driver used under Linux (wineoss.drv ou
+winearts.drv)<br>
+Wave : indicates the driver for audio (the most often msacm.drv)<br>
+Midi : indicates the driver for midi (the most often midmap.drv)<br>
+<h2></h2>
+<h2><a name="4.12."></a>4.12. Configure with
+WineSetupTk</h2>
+Xwine allows to configure Wine with the WineSetupTk tool in a
+relatively automatical way.<br>
+You must have installed WineSetupTk to use this functionality.<br>
+<h2><a name="4.13."></a>4.13. Edit the Wine configuration file</h2>
+<img alt="" src="imgs/edit_wine_cfg.png"
+ style="width: 510px; height: 333px;">
+<br>
+<br>
+You may here edit the Wine config file, stored in ~/.wine/config.<br>
+It allows to configure Wine without using the graphical configuration
+mode (to be used only if you know exactly what you are doing).<br>
+When you click on &lt;OK&gt;, your changes will be stored in the
+~/.wine/config file.<br>
+<h2><a name="4.14."></a>4.14. Restore the Wine default configuration
+file</h2>
+If you have damaged you configuration file, you may restore constantly
+the original /etc/wine/config file.<br>
+<h2><a name="4.15."></a>4.15. Export the Wine configuration /
+applications configurations (root only)</h2>
+<img src="imgs/export.png" alt="" style="width: 250px; height: 225px;">
+<br>
+<br>
+As root, you may export your Wine configuration and the applications
+configurations, to use them as reference for other users.
+<ul>
+  <li>The Wine configuration file will be exported to
+/etc/wine/config</li>
+  <li>The applications configurations files will be exported to
+/etc/xwine/apps/</li>
+</ul>
+When starting, XWine verifies if the reference files (/etc/wine/config
+and the files stored in /etc/xwine/apps/) are more recent than those of
+the user; if it is true, it loads these ones.<br>
+<br>
+When exporting each application configuration file, XWine
+asks you to add an icon in the Linux menu corresponding to the
+application, so that everybody can execute that application without
+running Xwine (as if it were a Linux application).<br>
+<br>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a
+ href="firststeps.html"> &lt;&lt;Previous</a></td>
+      <td align="center" valign="top" width="34%"><a href="index.html">Table
+of Contents</a></td>
+      <td align="right" valign="top" width="33%"><a
+ href="configureapp.html">Next&gt;&gt;</a></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="33%">First Steps<br>
+      </td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%">Configure / Execute<br>
+an Application </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<br>
+</body>
+</html>

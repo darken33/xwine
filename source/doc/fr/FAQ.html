@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>XWine - FAQ</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - FAQ" name="description" lang="fr">
+  <meta content="xwine, faq, wine, aide, linux, libre, free, software, logiciel" name="keywords" lang="fr"></head>
+
+<body alink="#6666bb" bgcolor="#ffffff" link="#6666bb" text="#000000" vlink="#6666bb">
+  <h1>XWine - FAQ</h1>
+  <address>La derni&egrave;re version sur <a href="http://darken33.free.fr"><span style="text-decoration: underline;">http://darken33.free.fr</span></a><a href="http://darken.tuxfamily.org/pages/xwine/FAQ.html"></a></address>
+  <p>
+  </p><p></p><hr><p>
+  </p><h2><u><a name="SOMMAIRE">Sommaire</a></u></h2>
+    <ul>
+      <li><a name="TOC1" href="FAQ.html#INSTALLATION">Probl&egrave;mes d'Installation</a>
+      </li><li><a name="TOC2" href="FAQ.html#UTILISATION">Probl&egrave;mes d'Utilisation</a>
+      </li><li><a name="TOC3" href="FAQ.html#NOUVEAU">Nouveau Probl&egrave;me ?</a>
+    </li></ul>
+  <p></p><hr><p>
+  </p><h2><u><a name="INSTALLATION">Probl&egrave;mes d'Installation</a></u></h2>
+  <i><b>Q1)</b> Le message suivant appara&icirc;t lors de l'&eacute;tape Make ?</i><br>
+  <code>ld: -ldb1 : file not found</code><br><br>
+  <b>R1)</b> La biblioth&egrave;que db1 n'a pas &eacute;t&eacute; trouv&eacute;e, veuillez l'installer<br><br>
+  <center><hr width="25%"></center>
+  <i><b>Q2)</b> Le message suivant appara&icirc;t lors de l'&eacute;tape configure ?</i><br>
+  <code>gnomeConf.sh : file not found</code><br><br>
+  <b>R2)</b> Le package gnome-libs-devel est manquant, veuillez l'installer<br><br>
+  <p></p><hr><p>
+  </p><h2><u><a name="UTILISATION">Probl&egrave;mes d'Utilisation</a></u></h2>
+  <i><b>Q1)</b> Le message suivant appara&icirc;t lors du lancement de XWine ?</i><br>
+  <code>** WARNING ** : Couldn't find pixmap file: xwine/winfd.xpm</code><br><br>
+  <b>R1)</b> Le r&eacute;pertoire par d&eacute;faut d'installation de XWine est /usr/local, deux solutions s'offrent &agrave; vous:
+  <ul>
+    <li>Relancer l'installation avec <code>./configure --prefix=/usr</code>
+    </li><li>Faire le lien suivant: <code>ln -s /usr/local/share/pixmaps/xwine /usr/share/pixmaps/xwine</code>
+  </li></ul>
+  <center><hr width="25%"></center>
+  <i><b>Q2)</b> Le message suivant appara&icirc;t dans la log ?</i><br>
+  <code>wine: file '/home/philippe/.wine/wineserver-localhost.localdomain/socket' exists,<br>
+        but I cannot connect to it; maybe the wineserver has crashed?<br>
+        If this is the case, you should remove this socket file and try again.</code><br><br>
+  <b>R2)</b> Une application s'est mal termin&eacute;e, il faut supprimer la socket: cliquez sur <b>Programmes&gt;Reset</b><br><br>
+  <p></p><hr><p>
+  </p><h2><u><a name="NOUVEAU">Nouveau Probl&egrave;me ?</a></u></h2>
+  N'h&eacute;sitez pas &agrave; me faire par de vos probl&egrave;mes et ou questions en m'envoyant un email<a href="mailto:Darken@tuxfamily.org"></a> afin que je tienne ce document &agrave; jour.<br>
+  Mon adresse e-email: <a href="mailto:ph.bousquet@abul.org">ph.bousquet@abul.org</a>
+  <p>
+
+  </p><hr>
+  <table>
+    <tbody><tr>
+      <td align="left">
+        <a href="http://validator.w3.org/check/referer">[Valid HTML 4.01!]</a>
+      </td>
+      <td align="left">
+        <small>Copyright &copy; 2001-2004 Philippe BOUSQUET</small>
+      </td><td>
+    <br>
+</td></tr>
+  </tbody></table>  
+
+</body></html>

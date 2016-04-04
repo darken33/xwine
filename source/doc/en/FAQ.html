@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>XWine - FAQ</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - FAQ" name="description" lang="en">
+  <meta content="xwine, faq, wine, help, linux, libre, free, software, logiciel" name="keywords" lang="en"></head>
+
+<body alink="#6666bb" bgcolor="#ffffff" link="#6666bb" text="#000000" vlink="#6666bb">
+  <h1>XWine - FAQ</h1>
+  <address>The latest version on  <a href="http://darken33.free.fr/"><span style="text-decoration: underline;">http://darken33.free.fr</span></a></address>
+  <p>
+  </p><p></p><hr><p>
+  </p><h2><u><a name="SOMMAIRE">Sommaire</a></u></h2>
+    <ul>
+      <li><a name="TOC1" href="#INSTALLATION">Installation problems</a>
+      </li><li><a name="TOC2" href="#UTILISATION">Running problems</a>
+      </li><li><a name="TOC3" href="#NOUVEAU">A new Problem ?</a>
+    </li></ul>
+  <p></p><hr><p>
+  </p><h2><u><a name="INSTALLATION">Installation problems</a></u></h2>
+  <i><b>Q1)</b> The next message is diplayed durring the Make step ?</i><br>
+  <code>ld: -ldb1 : file not found</code><br><br>
+  <b>R1)</b> The db1 library was not found, please install it<br><br>
+  <center><hr width="25%"></center>
+  <i><b>Q2)</b> The next message is diplayed durring the Configure step ?</i><br>
+  <code>gnomeConf.sh : file not found</code><br><br>
+  <b>R2)</b> The gnome-libs-devel package is not installed, please install it<br><br>
+  <p></p><hr><p>
+  </p><h2><u><a name="UTILISATION">Running problem</a></u></h2>
+  <i><b>Q1)</b> The next message is displayed when you run XWine ?</i><br>
+  <code>** WARNING ** : Couldn't find pixmap file: xwine/winfd.xpm</code><br><br>
+  <b>R1)</b> The default XWine installation directory is /usr/local two solutions:
+  <ul>
+    <li>Restart installation with <code>./configure --prefix=/usr</code>
+    </li><li>Make the next link: <code>ln -s /usr/local/share/pixmaps/xwine /usr/share/pixmaps/xwine</code>
+  </li></ul>
+  <center><hr width="25%"></center>
+  <i><b>Q2)</b> The next message is diplayed in the log file ?</i><br>
+  <code>wine: file '/home/philippe/.wine/wineserver-localhost.localdomain/socket' exists,<br>
+        but I cannot connect to it; maybe the wineserver has crashed?<br>
+        If this is the case, you should remove this socket file and try again.</code><br><br>
+  <b>R2)</b> A software is crashed, you have to flush the wineserver socket: click on <b>Programs&gt;Reset</b><br><br>
+  <p></p><hr><p>
+  </p><h2><u><a name="NOUVEAU">A new Problem ?</a></u></h2>
+  If you have a problem or if you want ask me a question you can send an email to me <a href="mailto:ph.bousquet@abul.org">ph.bousquet@abul.org</a>.<br>
+  <p>
+  
+  </p><hr> 
+  <table>
+    <tbody><tr>
+      <td align="left">
+        <a href="http://validator.w3.org/check/referer">[Valid HTML 4.01!]</a>
+      </td>
+      <td align="left">
+        <small>Copyright &copy; 2002 - Philippe BOUSQUET</small>
+      </td><td>
+    <br>
+</td></tr>
+  </tbody></table>  
+
+</body></html>

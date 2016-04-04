@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[fr]=XWine : panneau de configuration pour Wine
+Comment[en]=XWine : Wine's configuration panel
+Encoding=UTF-8
+Exec=xwine
+Icon=/usr/share/pixmaps/xwine/xwine_48.png
+MimeType=
+Name[fr]=Panneau de configuration
+Name[en]=Configuration's panel
+Path=
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

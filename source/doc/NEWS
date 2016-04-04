@@ -1,0 +1,121 @@
+EVOLUTIONS APPORTES
+_________________________________________________________________
+
+V1.0.1
+======    
+    * Support du charset ISO-8859-1 dans les fichiers langues
+    * Ajout du support de la langue Espagnole (pour Linex)
+
+V1.0
+====    
+    * Mise en place de la gestion des langues via des fichiers XML
+    * Ajout de l'administration de XWine pour l'utilisateur root
+    * Refonte du manuel utilisateur
+    * Mise en place de nouvelles options :
+          o xwine fichier.exe : permet d'exécuter fichier.exe sous controle de xwine
+          o xwine --config : permet de ne lancer que le panneau de configuration de wine
+
+V0.3.2
+======
+   - integration des graphismes de Brett
+   - mise a jour de l'historique de la boite exécuter
+   - diminution de l'image de prévisualisation dans les préférences
+   - creation d'un repertoires pour les images de fonds
+   - ajout du nom de disque dans la configurations des disques
+   - mise a jour de la liste des applications lors de l'ajout ou de
+     la modification d'une application
+   - creation d'un lanceur de xwine dans le menu KDE
+   
+V0.3.1r1
+========
+   - correction bug configuration de wine
+   - correction bug destruction de la fenetre principale
+
+V0.3.1
+======
+   - Mise en place des patchs de Mandrake
+   - Mise en place d'un panneau de configuration pour Wine
+   - Possibilité de définir la taille de la fenetre et
+     le fond d'écran.
+   - Nouveaux graphismes
+
+V0.3
+====
+   - Wine : Configuration de la Version de Windows à émuler
+   - Pouvoir récuperer le fichier de config par défaut
+   - Amélioration de la Version pour chaque application
+   - Correction de quelques bugs
+
+V0.2.4
+======
+   - Ajout d'un autodetect sur la version de windows à émuler
+   - Wine : Configuration des Ports
+   - Wine : Configuration de la Base de Registre
+   - Wine : Configuration de la Console
+   - Wine : Configuration du Multimédia
+
+V0.2.3
+======
+   - Ajout d'un lien vers WineMine ;-)
+   - Wine : Configuration du Mode graphique
+   - Lors du paramétrage des applications on peut configurer:
+     - Le mode graphique à utiliser pour cette Application
+     - Les DLLs à surcharger pour cette Application
+
+V0.2.2
+======
+   - Correction d'un grand nombre de bugs
+   - Pouvoir executer winesetuptk (config de wine)
+   - Wine : Configuration graphique des répertoires
+   - Wine : Configuration graphique des DLLs
+   - Wine : Configuration graphique de L'apparence
+
+V0.2.1
+======
+   - Correction des bugs de la v0.2
+   - Wine : Configuration graphique des disques dur
+   - Ajout d'un mode débug
+   - Possibilité de réinitialiser la log
+
+V0.2
+====
+   - Creer une icone sur les bureaux KDE et GNOME
+   - Un package en Anglais est disponible
+
+V0.1.4
+======
+   - Correction des bugs de la v0.1.3
+   - Mise en place d'une barre des taches
+   - Ajout de la version de windows à emuler
+
+V0.1.3
+======
+   - Correction des bugs de la v0.1.2
+   - Possibiliter de choisir le navigateur a l'installation
+   - Affichage du titre des applications dans les listes au
+     lieu de son nom
+   - Possibilité d'imprimer la Log
+   - Ajout d'un petit editeur
+
+V0.1.2
+======
+   - Ajout de la documentation, Fichiers d'aides
+   - Ajout de quelques fonctionnalités
+
+V0.1.1
+======
+   - Lancement d'une application dans son répertoire d'installation
+   - Ajout du fichier AUTHORS nécessaire à l'installation
+
+V0.1
+====
+   - Premiere version de XWine
+_________________________________________________________________
+
+Philippe BOUSQUET
+28 cours du général de GAULLE,
+33170 GRADIGNAN
+FRANCE.
+Tel: (+33) 06.61.99.25.84
+E-mail: Darken@tuxfamily.org
+Site: http://darken.tuxfamily.org

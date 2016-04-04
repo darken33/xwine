@@ -1,0 +1,612 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>XWine - Gu&iacute;a del usuario</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - Gu&iacute;a del usuario" name="description"
+ lang="en">
+  <meta
+ content="xwine, manual, wine, help, linux, libre, free, software, logiciel"
+ name="keywords" lang="en">
+</head>
+<body link="#6666bb" alink="#6666bb" bgcolor="#ffffff" text="#000000"
+ vlink="#6666bb">
+<h1>XWine - Gu&iacute;a del usuario<br>
+</h1>
+<address>XWine v0.3.1</address>
+<p> </p>
+<hr>
+<p> </p>
+<h2><a name="SOMMAIRE"><font color="#0000ff">C</font>ontenidos</a></h2>
+<ul>
+  <li><a name="TOC1" href="#PRESENTATION">Introducci&oacute;n</a> </li>
+  <li><a name="TOC2" href="#INSTALLATION">Instalaci&oacute;n</a> </li>
+  <li><a name="TOC3" href="#MENU">Men&uacute;</a> </li>
+  <li><a name="TOC5" href="#CONFIGWINE">Configuraci&oacute;n de Wine</a>
+  </li>
+  <li><a name="TOC5" href="#INSTALLAPP">Configurar una aplicaci&oacute;n</a>
+  </li>
+  <li><a name="TOC4" href="#EXECUTER">Ejecutar una aplicaci&oacute;n</a>
+  </li>
+  <li><a name="TOC41" href="#GERER">Gesti&oacute;n de aplicaciones</a> </li>
+  <li><a name="TOC7" href="#SITE">&iquest;D&oacute;nde puedo encontrar
+XWine?</a> </li>
+  <li><a name="TOC8" href="#LICENSE">Copyright y Licencia</a> </li>
+  <li><a name="TOC9" href="#AUTEUR">Autor</a> </li>
+</ul>
+<hr>
+<p> </p>
+<h2><a name="PRESENTATION"><font color="#0000ff">I</font>ntroducci&oacute;n</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b>XWine</b> es un interfaz gr&aacute;fico de usuario para
+el emulador Wine.<br>
+      <br>
+Con XWine puedes configurar y ejecutar aplicaciones de MS-Windows (Ms
+Dos, Windows 3.x o Win32).<br>
+      <br>
+Funciones de XWine:<br>
+      <ul>
+        <li>Configuraci&oacute;n de Wine</li>
+        <li>Configuraci&oacute;n y gesti&oacute;n de aplicaciones de
+MS-Windows </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="INSTALLATION"><font color="#0000ff">I</font>nstalaci&oacute;n</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b><u>Librer&iacute;as que necesitas:</u></b>
+      <ul>
+        <li>GTK</li>
+        <li>Gnome</li>
+        <li>db1</li>
+      </ul>
+      <br>
+      <b><u>Software que necesitas:</u></b>
+      <ul>
+        <li>Wine : XWine&nbsp; es un interfaz gr&aacute;fico de usuario
+para Wine ;-)</li>
+        <li>Un navegador WEB: es tu navegador para obtener ayuda </li>
+      </ul>
+      <br>
+      <b><u>Instalaci&oacute;n de XWine</u></b>
+      <ol>
+        <li>Entra en el directorio de XWine:<br>
+          <code>$ cd XWine-x.x (x.x es la versi&oacute;n de XWine)</code></li>
+        <li>Lanza la configuraci&oacute;n de XWine:<br>
+          <code>$ ./configure</code></li>
+        <li>Lanza la compilaci&oacute;n de XWine:<br>
+          <code>$ make</code></li>
+        <li>Tienes que abrir una sesi&oacute;n como root:<br>
+          <code>$ su</code></li>
+        <li>Ejecuta la instalaci&oacute;n de XWine:<br>
+          <code># make install</code></li>
+      </ol>
+Para m&aacute;s informaci&oacute;n puedes leer el fichero INSTALL
+inclu&iacute;do en el archivo XWine-x.x.tar.gz.<br>
+      <br>
+      <b><u>Ejecutar XWine</u></b>
+      <ul>
+        <li>Escribe el siguiente comando:<br>
+          <code>$ xwine</code></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="MENU"><font color="#0000ff">M</font>en&uacute;</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b><u>El men&uacute; de Inicio:</u> &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;</b>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td><b>Inicio</b></td>
+                </tr>
+                <tr>
+                  <td>Programas</td>
+                  <td>: <i>Para lanzar las aplicaciones de Windows que
+est&aacute;n configurado.</i></td>
+                </tr>
+                <tr>
+                  <td>Configurar</td>
+                  <td>: <i>Configuraci&oacute;n de Wine y del software</i></td>
+                </tr>
+                <tr>
+                  <td>Ayuda<br>
+                  </td>
+                  <td>: <i>Para ver la Ayuda y las Preguntas de Uso
+Frecuente (FAQ)<br>
+                  </i></td>
+                </tr>
+                <tr>
+                  <td>Ejecutar</td>
+                  <td>: <i>Para lanzar aplicaciones de Windows</i></td>
+                </tr>
+                <tr>
+                  <td>Salir</td>
+                  <td>: <i>Salir de XWine</i></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>El men&uacute; de Ayuda</u></b>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td><span style="font-weight: bold;">Ayuda</span><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>FAQ</td>
+                  <td>: <i>Para ver las Preguntas de Uso Frecuente<br>
+                  </i></td>
+                </tr>
+                <tr>
+                  <td>Manual</td>
+                  <td>: <i>Para ver esta Gu&iacute;a del Usuario<br>
+                  </i></td>
+                </tr>
+                <tr>
+                  <td>Acerca de<br>
+                  </td>
+                  <td>: <i>Para ver el apartado Acerca de... de XWine</i></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>El men&uacute; de Programas</u></b>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td><b>Programas</b></td>
+                </tr>
+                <tr>
+                  <td>Lista</td>
+                  <td>: <i>Para lanzar las aplicaciones de Windows que
+est&aacute;n configuradas.</i></td>
+                </tr>
+                <tr>
+                  <td>Wine</td>
+                  <td>: <i>Para lanzar las Utilidades de Wine (hay
+que instalar wine-utils)</i></td>
+                </tr>
+                <tr>
+                  <td>Calculadora</td>
+                  <td>: <i>Muestra una calculadora</i></td>
+                </tr>
+                <tr>
+                  <td>Editor<br>
+                  </td>
+                  <td>: <i>Muestra un sencillo editor</i></td>
+                </tr>
+                <tr>
+                  <td>Reset</td>
+                  <td>: <i>Para matar el socket del servidor de Wine</i></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>El men&uacute; de Configuraci&oacute;n</u></b>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td><b>Configuraci&oacute;n</b></td>
+                </tr>
+                <tr>
+                  <td>Instalar</td>
+                  <td>: <i>Para configurar las aplicaciones de
+MS-Windows.</i></td>
+                </tr>
+                <tr>
+                  <td>Ver el fichero Log</td>
+                  <td>: <i>Muestra el fichero log.</i></td>
+                </tr>
+                <tr>
+                  <td>Configurar Wine</td>
+                  <td>: <i>Muestra el panel de configuraci&oacute;n de
+Wine.</i></td>
+                </tr>
+                <tr>
+                  <td>Propiedades</td>
+                  <td>: <i>Para configurar las propiedades de XWine.</i></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>El men&uacute; de Ayuda</u></b>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td><span style="font-weight: bold;">Ayuda</span><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>FAQ</td>
+                  <td>: <i>Para ver las Preguntas de Uso Frecuente</i></td>
+                </tr>
+                <tr>
+                  <td>Manual</td>
+                  <td>: <i>Para ver esta Gu&iacute;a del usuario</i></td>
+                </tr>
+                <tr>
+                  <td>Acerca de<br>
+                  </td>
+                  <td>: <i>Para ver el apartado Acerca de... de XWine</i></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="CONFIGWINE"><font color="#0000ff">C</font>onfiguraci&oacute;n
+de Wine<br>
+</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> XWine permite configurar Wine a trav&eacute;s de
+men&uacute;s gr&aacute;ficos:<br>
+      <br>
+      <b><u>Versi&oacute;n de Windows</u></b><br>
+Aqu&iacute; se puede especificar la versi&oacute;n de Windows a emular.<br>
+      <br>
+      <b><u>Configuraci&oacute;n de Unidades de disco</u></b><br>
+Aqu&iacute; se pueden a&ntilde;adir, modificar o borrar unidades de
+disco para Wine.<br>
+      <br>
+      <b><u>Directorios del Sistema</u></b><br>
+Aqu&iacute; se definen d&oacute;nde se encuentran los directorios de
+Windows. Tambi&eacute;n se define la variable PATH.<br>
+      <br>
+      <b><u>Redefinir DLLs</u></b><br>
+Aqu&iacute; se definen cu&aacute;les DLL quieres usar (DLL de Windows o
+DLL de Wine).<br>
+      <br>
+      <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Interfaz de usuario</span></span><br>
+Aqu&iacute; se puede configurar el aspecto de Wine (Windows 3.1, 95 o
+98). Tambi&eacute;n se puede configurar las fuentes del sistema.<br>
+      <br>
+      <b><u>Configuraci&oacute;n de X11</u></b><br>
+Aqu&iacute; se puede configurar si la aplicaci&oacute;n de Wine tiene
+que lanzarse en un escritorio, o ser gestionada o no por las XFree.
+Tambi&eacute;n se puede configurar el Direct Draw.<br>
+      <br>
+      <b><u>Configuraci&oacute;n de Puertos</u></b><br>
+Aqu&iacute; se pueden configurar los puertos paralelo y de serie.
+Tambi&eacute;n se puede configurar la impresora.<br>
+      <br>
+      <b><u>Configuraci&oacute;n del Registro</u></b><br>
+Aqu&iacute; se configura d&oacute;nde tiene que encontrar Wine las
+informaciones del registro de Windows.<br>
+      <br>
+      <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Configuraci&oacute;n del Terminal</span></span><br>
+Se puede especificar el programa de terminal que usar&aacute; Wine.<br>
+      <br>
+      <b><u>Configuraci&oacute;n del multimedia</u></b><br>
+Aqu&iacute; se especifican los drivers de sonido, onda y midi.<br>
+      <br>
+      <b><u>Ejecutar winesetuptk</u></b><br>
+Si winestuptk est&aacute; instalado, se puede ejecutar desde este
+men&uacute;.<br>
+      <br>
+      <b><u>Fichero de configuraci&oacute;n</u></b><br>
+Aqu&iacute; tambi&eacute;n se puede editar la configuraci&oacute;n de
+Wine.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="INSTALLAPP"><font color="#0000ff">C</font>onfigurar una
+aplicaci&oacute;n<br>
+</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%"></td>
+      <td> <b><u>Configurar una aplicaci&oacute;n</u></b><br>
+      <ol>
+        <li>Ve a la ventana de Gesti&oacute;n de Aplicaciones:<br>
+          <code> haz clic en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Configuraci&oacute;n&gt;Instalar</b>
+          </code></li>
+        <li>Para crear, modificar o borrar la configuraci&oacute;n de
+una aplicaci&oacute;n:<br>
+          <code>haz clic en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Nuevo</span></span></code> <i>si queremos
+configurar una nueva aplicaci&oacute;n.</i></li>
+        <li>Configuraci&oacute;n de la aplicaci&oacute;n:<br>
+          <code><b>T&iacute;tulo</b></code> : <i>T&iacute;tulo de la
+aplicaci&oacute;n</i><br>
+          <code><b>Ejecutar</b></code> : Aplicaci&oacute;n a lanzar<i>
+(se puede seleccionar con el explorador: bot&oacute;n "...")</i><br>
+          <code><b>Usar un CD-ROM</b></code> : Si est&aacute;
+seleccionado,&nbsp; <i>XWine pedir&aacute; que se inserteel CD-ROM
+antes de ejecutar la aplicaci&oacute;n.</i><br>
+          <code><b>Necesita par&aacute;metros</b></code> : <i>Si la
+aplicaci&oacute;n necesita par&aacute;metros.</i><br>
+          <code><b>Versi&oacute;n de Windows</b></code> : <i>Se puede
+seleccionar la versi&oacute;n de Windows (win95,winNT,...)</i><br>
+          <code><b>Emular MS-DOS</b></code> : Si se trata de una
+aplicaci&oacute;n de MS-DOS.<i></i><br>
+          <code><b>Icono</b></code> : <span style="font-style: italic;">Se
+puede seleccionar un icono</span><i></i></li>
+        <i>Con </i><code><b>DLLs</b></code><i> y </i><code><b>X11drv</b></code><i>
+se puede configurar Wine para una aplicaci&oacute;n espec&iacute;fica:<br>
+- Redefinir configuraci&oacute;n de DLLs <br>
+- Configuraci&oacute;n X11</i> <li>Ahora hay que guardar la
+configuraci&oacute;n:<br>
+          <code> Haz click en <b>Aceptar</b></code></li>
+        <li>Ya se puede ejecutar la aplicaci&oacute;n:<br>
+          <code> haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Programas&gt;Lista</b>
+          </code></li>
+        <li>Tambi&eacute;n se puede crear un icono en los escritorios
+KDE y GNOME: <br>
+          <code>haz click en <b>Inicio&gt;Configuraci&oacute;n&gt;Instalar</b>
+y despu&eacute;s en <b>&lt;Escritorio&gt;</b></code></li>
+      </ol>
+      <br>
+      <b><u>Instalar una aplicaci&oacute;n</u></b><br>
+      <ol>
+        <li>Ejecuta el programa de instalaci&oacute;n en el CD-Rom:<br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Ejecutar</b></code></li>
+        <li>Cuando la aplicaci&oacute;n se ha instalado, es necesario
+verificar si funciona.&nbsp; <code>haz clic&nbsp; en <span
+ style="font-family: mon;"><span style="font-weight: bold;">Inicio</span></span><b>&gt;Ejecutar</b></code></li>
+        <li>Configurar la aplicaci&oacute;n:<br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Configuraci&oacute;n&gt;Instalar</b></code></li>
+        <li>Verificar la configuraci&oacute;n:<br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Programas&gt;Lista</b></code></li>
+      </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="EXECUTER"><font color="#0000ff">E</font>jecutar una
+aplicaci&oacute;n<br>
+</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b><u>Ejecutar una aplicaci&oacute;n que est&aacute;
+configurada</u></b><br>
+      <ol>
+        <li>Ve al listado de aplicaciones:<br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Programas&gt;Lista</b></code></li>
+        <li>Selecciona la aplicaci&oacute;n<br>
+        </li>
+        <li>L&aacute;nzala: <br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Ejecutar</span></span><b></b></code></li>
+      </ol>
+      <br>
+      <b><u>Ejecutar otras aplicaciones</u></b><br>
+Si quieres ejecutar un programa de instalaci&oacute;n o verificar si
+una aplicaci&oacute;n funciona antes de configurarla:
+      <ol>
+        <li>Abre la ventana "Ejecutar": <br>
+          <code>haz click en <span style="font-family: mon;"><span
+ style="font-weight: bold;">Inicio</span></span><b>&gt;Ejecutar</b></code></li>
+        <li>Escribe el comando a ejecutar o seleccionalo con el
+explorador:<br>
+          <code>haz click en el bot&oacute;n <b>"..."</b></code> <i>para
+mostrar el explorador<br>
+          </i></li>
+        <li>L&aacute;nzalo: <br>
+          <code>haz click en el bot&oacute;n <span
+ style="font-family: mon;"><span style="font-weight: bold;">ACEPTAR</span></span><b></b></code></li>
+      </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="GERER"><font color="#0000ff">G</font>estionando las
+aplicaciones</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b><u>El fichero log</u></b><br>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>Cada cosa que realiza XWine se escribe en un fichero
+log, que puedes ver haciendo:<br>
+            <code><b>Inicio&gt;Configuraci&oacute;n&gt;Ver fichero log</b></code><br>
+            <br>
+            <u>Contenidos del fichero:</u>
+            <ul>
+              <li>Todas las cosas que realiza XWine</li>
+              <li>Todos los mensajes del emulador Wine.</li>
+            </ul>
+Cuando cierras XWine puedes guardar o borrar el fichero log.<br>
+            <br>
+When you have some problems you should see this file it can help you.<br>
+You can print the log file : clic on button <b><code>&lt;Print&gt;</code></b>.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>La barra de tareas</u></b><br>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td> Se puede parar un programa que no est&aacute;
+funcionando bien haciendo click en&nbsp; <code><b>Matar.</b></code><br>
+El bot&oacute;n <code><b>Actualizar</b></code> se usa para actualizar
+la barra de tareas.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><u>El bot&oacute;n de reiniciar</u></b><br>
+      <table>
+        <tbody>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>Cuando un programa falla puede bloquear el socket del
+servidor Wine, pero puedes destruirlo haciendo lo siguiente:<br>
+            <code><b>Inicio&gt;Programas&gt;Reiniciar<br>
+            </b></code>Cuando mates una aplicaci&oacute;n, debes usarlo.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="SITE"><font color="#0000ff">&iquest;</font>D&oacute;nde
+puedo encontrar XWine?</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> Tengo mucho trabajo por hacer en <b>XWine</b>, si te
+quieres descargar la &uacute;ltima versi&oacute;n tienes que visitar mi
+p&aacute;gina web <a href="http://darken33.free.fr">http://darken33.free.fr</a>.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="LICENSE"><font color="#0000ff">C</font>opyright y Licencia<br>
+</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b><u>Licencia</u></b><br>
+      <b>XWine</b> est&aacute; bajo la Licencia P&uacute;blica General
+de GNU (GNU GENERAL PUBLIC LICENSE). Para m&aacute;s
+informaci&oacute;n, lee el fichero COPYING inclu&iacute;do con el
+archivo XWine-x.x.tar.gz.<br>
+      <br>
+      <b><u>Copyright</u></b><br>
+      <b>XWine</b> Copyright (c) 2001-2004 - Philippe BOUSQUET.<br>
+      <br>
+      <b><u>Garant&iacute;a</u></b><br>
+Como se describe en la GNU GENERAL PUBLIC LICENSE, no doy ninguna
+garant&iacute;a para este programa. </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p> </p>
+<h2><a name="AUTEUR"><font color="#0000ff">A</font>utor</a></h2>
+<table>
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td> <b>Philippe BOUSQUET</b><br>
+Address: Apt 21, r&eacute;sidence le "Vend&ocirc;me", 80 rue des
+Sabli&egrave;res, 33800 BORDEAUX. FRANCE.<br>
+e-mail: <a href="mailto:ph.bousquet@abul.org">ph.bousquet@abul.org</a><br>
+web: <a href="http://darken33.free.fr"><span
+ style="text-decoration: underline;">http://darken33.free.fr</span></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p> </p>
+<hr>
+<table>
+  <tbody>
+    <tr>
+      <td align="left"> <a href="http://validator.w3.org/check/referer">[Valid
+HTML 4.01!]</a> </td>
+      <td align="left"> <small>Copyright &copy; 2002 - Philippe
+BOUSQUET</small> </td>
+      <td> <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,85 @@
+Titre       : XWine
+Version     : 1.0.1
+Description : Interface Graphique pour wine
+Auteur      : Philippe BOUSQUET
+Creation    : 19/07/2001
+Modification: 22/02/2002
+License     : GNU GENERAL PUBLIC LICENSE
+Copyright   : (c) 2001,2002 - Philippe BOUSQUET
+_________________________________________________________________
+
+PRESENTATION
+============
+	Xwine est une interface graphique pour l'émulateur Wine.
+	Il permet de configurer et d'exécuter des applications
+	fonctionnant sous Windows.
+
+INSTALLATION
+============
+        - Bibliothèques nécessaires:
+           - GTK
+           - Gnome
+           - db1
+	   - libXML2
+
+        - Logiciels nécessaires:
+	   - Wine
+	   - winesetuptk (non obligatoire)
+	   - Un navigateur WEB (pour fichier d'aide)
+
+	- Installation
+	   1) Configurer l'installation:
+           $ ./configure
+	   2) Compiler XWine:
+           $ make
+	   3) Installation XWine (vous devez etre root):
+           # make install
+
+	si le répertoire /usr/share/pixmaps/xwine n'existe pas faire le lien suivanr:
+	$ ln -s /usr/local/share/pixmaps/xwine/ /usr/share/pixmaps/xwine
+
+        Pour plus d'informations veuillez vous reporter à la note INSTALL
+
+MANUEL UTILISATEUR
+==================
+        Il existe un manuel utilisateur au format HTML: fr/index.html
+
+FAQ
+===
+        Il existe une liste des questions fréquentes au format HTML: fr/FAQ.html
+
+NOUVEAUTES
+==========
+	Pour avoir la liste des nouveautés veuillez vous reporter à la note NEWS.
+
+A FAIRE
+=======
+	Pour avoir la liste du reste à faire veuillez vous reporter à la note TODO.
+
+BUGS
+====
+	Pour avoir la liste des bugs veuillez vous reporter à la note BUGS.
+
+GARANTIES
+=========
+	ATTENTION: Je ne prend aucune responsabilité sur les dégats
+	encourus lors de l'utilisation de ce logiciel.
+
+LICENSE
+=======
+	Ce logiciel est sous license GPL, Pour plus d'informations
+	consulter la note COPYING.
+
+AUTRES PROJETS
+==============
+	XWine n'est pas mon seul projet, pour en savoir plus
+	veuillez consulter le site http://darken33.free.fr.
+_________________________________________________________________
+
+Philippe BOUSQUET
+Apt 21, résidence le "Vendôme", 80 rue des Sablières
+33800 BORDEAUX
+FRANCE.
+Tel: (+33) 06.61.99.25.84
+E-mail : ph.bousquet@abul.org
+Site: http://darken33.free.fr

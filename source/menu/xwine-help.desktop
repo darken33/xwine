@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[fr]=XWine 1.0 : Manuel Utilisateur
+Comment[en]=XWine 1.0 : User Manual (French)
+Encoding=UTF-8
+Exec=$HELP_BROWSER ///usr/share/doc/xwine/fr/index.html
+Icon=/usr/share/pixmaps/xwine/help.xpm
+MimeType=
+Name[fr]=Aide
+Name[en]=Help
+Path=
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

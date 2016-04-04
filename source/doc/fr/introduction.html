@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>XWine - Introduction</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta content=", XWine - Manuel Utilisateur" name="description"
+ lang="fr">
+  <meta
+ content="xwine, manuel, wine, aide, linux, libre, free, software, logiciel"
+ name="keywords" lang="fr">
+</head>
+<body alink="#6666bb" bgcolor="#ffffff" link="#6666bb" text="#000000"
+ vlink="#6666bb">
+<div class="NAVFOOTER">
+<center><b>XWine v1.0 - Manuel Utilisateur</b></center>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a href="index.html">&lt;&lt;Pr&eacute;c&eacute;dent</a></td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%"><a
+ href="installation.html">Suivant&gt;&gt;</a></td>
+    </tr>
+  </tbody>
+</table>
+<hr> </div>
+<div class="SOMMAIRE">
+<h1>Chapitre 1. Introduction</h1>
+<ul>
+  <li><a href="#1.1.">1.1. Wine : un
+&eacute;mulateur Ms-Windows ?</a></li>
+  <li><a href="#1.2.">1.2. XWine : une
+interface graphique pour wine</a></li>
+  <li><a href="#1.3.">1.3. Wine / XWine : une solution alternative</a></li>
+</ul>
+</div>
+<div class="normal">
+<h2><a name="1.1."></a>1.1. Wine : un
+&eacute;mulateur Ms-Windows ?</h2>
+<p> Lorsque vous voulez utiliser des applications Linux et des
+applications Ms-Windows, vous vous connectez sous Linux pour utiliser
+celles de Linux (par exemple Kdevelop) et sous Windows pour les
+applications fonctionnant sous ce syst&egrave;me (par exemple Ms-Word).
+Le probl&egrave;me majeur de cette solution est qu'il faut sans cesse
+red&eacute;marrer son ordinateur suivant l'application que l'on veut
+ex&eacute;cuter. Le projet Wine a donc &eacute;t&eacute;
+cr&eacute;&eacute; pour r&eacute;soudre cet inconv&eacute;nient. En
+effet il permet d'ex&eacute;cuter ses applications fonctionnant sous
+Ms-Windows directement sous Linux comme s'il s'agissait d'applications
+sp&eacute;cifique pour Linux. </p>
+<p> Wine n'est pas &agrave; proprement parler un &eacute;mulateur, il
+s'agit en fait d'une impl&eacute;mentation des biblioth&egrave;ques
+Windows sous linux. Vous pouvez compiler vos applications Windows
+directement sous linux. Cela signifie &eacute;videmment que vous devez
+poss&eacute;der les sources du logiciel que vous voulez utilisez. Mais
+vous pouvez &eacute;galement faire fonctionner vos applications Windows
+sous Linux, sans pour cela les recompiler, et c'est cette
+fonctionnalit&eacute; qui nous int&eacute;resse ici. </p>
+<p> Du fait qu'il s'agit d'une impl&eacute;mentation des
+biblioth&egrave;ques Windows sous Linux, il n'est m&ecirc;me pas
+n&eacute;cessaire de poss&eacute;der le syst&egrave;me d'exploitation
+Windows pour faire fonctionner vos applications pour Windows. </p>
+<p> Wine poss&egrave;de cependant quelques inconv&eacute;nients, en
+effet Wine poss&egrave;de un fichier de configuration qui n'est pas
+facile d'utilisation, et pour ajouter par exemple un disque dur vous
+devez &eacute;diter ce fichier et vous positionner au bon endroit pour
+ajouter la description du disque ; de plus si vous faites une erreur
+dans
+le fichier de configuration, Wine refusera de fonctionner correctement.
+</p>
+<p> Enfin Wine se lance en tapant des lignes de commandes sous la
+console avec des options possible suivant la particularit&eacute; du
+logiciel &agrave; utiliser. Son utilisation est donc un peu ardue du
+fait qu'il faut ma&icirc;triser un minimum de commandes Linux, et se
+souvenir des options n&eacute;cessaires pour faire fonctionner tel ou
+tel logiciel. </p>
+</div>
+<div class="normal">
+<h2><a name="1.2."></a>1.2. XWine : une
+interface graphique pour Wine</h2>
+<p> Le projet XWine a &eacute;t&eacute; cr&eacute;&eacute; en juillet
+2001, son objectif premier &eacute;tait de pouvoir ex&eacute;cuter une
+application Ms Windows (via Wine) d'un simple clic de souris sous une
+interface graphique. XWine devait permettre de param&eacute;trer une
+fois pour toutes une application Windows pour l'&eacute;mulateur Wine,
+puis apr&egrave;s par simple clic de souris de lancer l'application
+avec
+toutes les options param&eacute;tr&eacute;es. </p>
+<p> Du fait que plusieurs personnes ayant
+t&eacute;l&eacute;charg&eacute; mon logiciel me demandaient des
+explications pour configurer l'&eacute;mulateur, j'ai
+d&eacute;cid&eacute; de rajouter une partie Configuration Graphique de
+l'&eacute;mulateur dans les fonctionnalit&eacute;s de XWine. En effet
+pouvoir configurer l'&eacute;mulateur par th&egrave;mes et de
+fa&ccedil;on graphique est plus convivial et permet de ne pas
+alt&eacute;rer le fichier de configuration (on ne le manipule plus
+directement). </p>
+<p> Enfin le dernier objectif de XWine est de pouvoir g&eacute;rer ces
+applications Ms-Windows. En effet lorsque une application fonctionne
+mal et boucle, il est important de pouvoir arr&ecirc;ter le processus
+de fa&ccedil;on simple. Or il ne s'agit pas d'une application reconnue
+par le Gestionnaire Graphique de Linux (le processus n'appara&icirc;t
+pas sur la barre des t&acirc;ches). J'ai donc ajout&eacute; une barre
+des
+t&acirc;ches dans mon interface pour pouvoir arr&ecirc;ter le
+fonctionnement
+d'une application. J'ai aussi ajout&eacute; un fichier log qui recense
+toutes les actions effectu&eacute;es sous XWine et stocke tous les
+messages provenant de l'&eacute;mulateur Wine. </p>
+</div>
+<div class="normal">
+<h2><a name="1.3."></a>1.3. Wine / XWine : une solution alternative</h2>
+<p> Wine et XWine r&eacute;unis constituent une solution
+int&eacute;ressante pour trois utilisations diff&eacute;rentes : </p>
+<p> <u>La compl&eacute;mentarit&eacute; Windows / Linux :</u><br>
+Lorsque l'on poss&egrave;de les deux syst&egrave;mes, on peut sous
+Linux utiliser l'int&eacute;gralit&eacute; de ses logiciels sans avoir
+&agrave; red&eacute;marrer son ordinateur, ce qui permet une plus
+grande efficacit&eacute; dans son travail par gain de temps. </p>
+<p> <u>Migration de Windows vers Linux :</u><br>
+Beaucoup de personnes h&eacute;sitent &agrave; passer sous Linux car
+leur logiciel pr&eacute;f&eacute;r&eacute; n'existe pas pour cette
+plate-forme. Avec Wine/XWine ils peuvent se s&eacute;parer du
+co&ucirc;t
+de la Licence d'utilisation de Ms-Windows, et continuer &agrave;
+travailler avec leur logiciel. </p>
+<p> <u>Utilisation du syst&egrave;me Linux seul :</u><br>
+Un utilisateur chevronn&eacute; de Linux peut &ecirc;tre ennuy&eacute;
+de ne pas &ecirc;tre compatible avec le monde Windows. Surtout en ce
+qui concerne le format de donn&eacute;es : doc, ppt, bmp, etc. Ou bien,
+le
+d&eacute;veloppeur d'applications multi-plate-forme (Java, C, C++, ...)
+devrait se procurer un syst&egrave;me Windows pour ses tests. Le couple
+Wine/XWine lui permet de travailler sans avoir le co&ucirc;t
+de la licence du syst&egrave;me de Microsoft. </p>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" width="33%"><a href="index.html">&lt;&lt;Pr&eacute;c&eacute;dent</a></td>
+      <td align="center" valign="top" width="34%"><a href="index.html">Sommaire</a></td>
+      <td align="right" valign="top" width="33%"><a
+ href="installation.html">Suivant&gt;&gt;</a></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="33%">Sommaire</td>
+      <td align="center" valign="top" width="34%">&nbsp;</td>
+      <td align="right" valign="top" width="33%">Installation</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

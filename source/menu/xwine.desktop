@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[fr]=Interface graphique pour Wine
+Comment[en]=User Interface for Wine
+Encoding=UTF-8
+Exec=xwine
+Icon=/usr/share/pixmaps/xwine/xwine_48.png
+MimeType=
+Name[fr]=XWine
+Name[en]=XWine
+Path=
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
